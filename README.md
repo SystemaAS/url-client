@@ -7,7 +7,7 @@ Java client for call on URI, typically used for scheduling.
  1. Place *url.jar* in working folder
  2. Execute, in working folder:
  
-	java -jar url.jar <<url>>
+	java -jar url.jar "url"
 	
 Example:
 
