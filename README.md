@@ -11,4 +11,4 @@ Java client for call on URI, e.g. used for scheduling.
 	
 Example:
 
-	java -jar url.jar "http://localhost:8080/visma-net-proxy/getCustomer.do?user=FREDRIK&customerCd=10000"
+	java -jar url-client.jar "http://localhost:8080/visma-net-proxy/getCustomer.do?user=FREDRIK&customerCd=10000"
