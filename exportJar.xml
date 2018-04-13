@@ -7,7 +7,7 @@
     <property name="dir.workspace" value="/Users/fredrikmoller/Documents/workspaces/systema2"/>
     <property name="dir.jarfile" value="${dir.buildfile}/build/target"/>
     <target name="create_run_jar">
-        <jar destfile="${dir.jarfile}/url.jar" filesetmanifest="mergewithoutmain">
+        <jar destfile="${dir.jarfile}/url-client.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="no.systema.url.Client"/>
                 <attribute name="Class-Path" value="."/>
