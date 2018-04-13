@@ -33,7 +33,7 @@ public class Client {
 
 	private String call(URI uri) {
 		RestTemplate restTemplate = new RestTemplate();
-		ResponseEntity<String> response = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		ResponseEntity<String> response = new ResponseEntity(HttpStatus.BAD_REQUEST);
 
 		try {
 			response = restTemplate.getForEntity(uri, String.class);
