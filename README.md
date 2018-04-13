@@ -4,7 +4,7 @@ Java client for call on URI, typically used for scheduling.
 
 ##Usage
 
- 1. Place *url.jar* in working folder
+ 1. [Download](https://github.com/SystemaAS/url-client/build/target/url.jar)  *url.jar* to working folder
  2. Execute, in working folder:
  
 	java -jar url.jar "url"
