@@ -1,10 +1,10 @@
 # URL client
 
-Java client for call on URI, typically used for scheduling.
+Java client for call on URI, e.g. used for scheduling.
 
 ##Usage
 
- 1. [Download](https://github.com/SystemaAS/url-client/build/target/url.jar)  *url.jar* to working folder
+ 1. [Download](https://github.com/SystemaAS/url-client/tree/master/build/target/url-client.jar)  *url-client.jar* to working folder
  2. Execute, in working folder:
  
 	java -jar url.jar "url"
