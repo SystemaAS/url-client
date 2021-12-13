@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
  * @date 2018-04
  */
 public class Client {
-	private static Logger logger = Logger.getLogger(Client.class);
+	private static Logger logger = LogManager.getLogger(Client.class);
 	
 	public static void main(String[] args) throws Throwable {
 		Client client = new Client();
