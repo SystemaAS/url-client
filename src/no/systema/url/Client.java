@@ -3,28 +3,23 @@ package no.systema.url;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.apache.logging.log4j.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * Simple URI client, to use on command line.
- * 
- * @author fredrikmoller
- * @date 2018-04
- */
 public class Client {
 	private static Logger logger = LogManager.getLogger(Client.class);
 	
-	public static void main(String[] args) throws Throwable {
+	public static void main(String[] args) {
 		Client client = new Client();
 		URI uri = null;
 		try {
 			uri = new URI(args[0]);
 		} catch (URISyntaxException e) {
 			logger.error("URI "+ args[0]+" is incorrect");
-			throw e;
+			e.printStackTrace();
 		} 
 
 		client.call(uri);
@@ -46,5 +41,4 @@ public class Client {
 		return response.toString();
 
 	}
-
 }
