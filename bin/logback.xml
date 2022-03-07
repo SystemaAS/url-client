@@ -1,0 +1,15 @@
+<configuration scan="true" debug="false">
+  <property name="OWN_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%p] %c:%L - %m%n" />
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>${OWN_PATTERN}</pattern>
+    </encoder>
+  </appender>
+  <logger name="no.systema" level="INFO" additivity="false"> 
+        <appender-ref ref="STDOUT" />
+  </logger> 
+   
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
